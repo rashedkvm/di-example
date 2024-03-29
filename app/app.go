@@ -1,7 +1,7 @@
 package app
 
 import (
-	"example.com/di-example/di"
+	"github.com/rashedkvm/di-example/di"
 )
 
 // Application represents our main application that depends on a Logger.

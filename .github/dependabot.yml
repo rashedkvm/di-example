@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: monthly
+    day: "sunday"
+  labels:
+    - "github"
+    - "actions"
+  reviewers:
+    - "rashedkvm"
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: monthly
+    day: "sunday"
+  open-pull-requests-limit: 10
+  rebase-strategy: auto
+  labels:
+    - "go"
+    - "dependencies"
+  reviewers:
+    - "rashedkvm"
+
